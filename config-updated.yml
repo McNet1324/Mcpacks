@@ -1,0 +1,109 @@
+# WorldResources config
+# Put your pack .zip files into plugins/WorldResources/packs/
+
+http:
+  # Interface the built-in web server binds to
+  bind: 0.0.0.0
+  port: 8123
+  # PUBLIC address players use to reach this server's web server (IP or domain).
+  # Only needed for local zip packs - not needed if you only use links below.
+  # MUST be set for zips. The port above must be open / forwarded in your firewall.
+  public-host: ""
+
+# Bedrock players (Geyser/Floodgate) are never sent these Java packs: their packs come from Geyser's packs folder
+skip-bedrock: true
+
+# Mixed client/server versions (ViaVersion / ViaBackwards). Detected automatically.
+via:
+  # Clients older than 1.20.3 (protocol < 765) can only hold ONE server pack, so they
+  # get just the highest-priority pack that applies to them.
+  legacy-single-pack: true
+# Optional per-pack client version window, by pack name (file name or link name).
+# from / to are inclusive and both optional. "26.1" covers all of 26.1.x,
+# and a trailing "+" on "to" means no upper limit. Without ViaVersion, the
+# client is assumed to match the server version.
+# limits:
+#   some-pack.zip:
+#     from: "1.21"
+#     to: "26.3+"
+#   old-pack:
+#     to: "1.20.4"
+
+# Rate limiting for the plugin's own downloads of external links (only used to
+# compute missing sha1 values). Avoids HTTP 429 "Too Many Requests".
+# NOTE: players' clients download the packs themselves and are not limited by this.
+# Setting sha1 on each link avoids all plugin downloads.
+rate-limit:
+  delay-ms: 1000        # minimum gap between requests to the same host
+  max-retries: 5        # retries when a site answers 429/503
+  backoff-ms: 2000      # first retry wait, doubles each retry (Retry-After is honored)
+  max-wait-ms: 30000    # never wait longer than this for one retry
+  cache-hashes: true    # remember computed hashes in hash-cache.properties
+  user-agent: "WorldResources"
+
+# Staggered sending: instead of sending all packs at once (clients then download them
+# in parallel from the same host and may hit HTTP 429), send them one at a time in
+# priority order and wait until the client finished each one. Tradeoff: slower join,
+# and the client reloads resources after every pack.
+stagger:
+  enabled: true
+  delay-ms: 500        # pause after a pack finished before sending the next
+  timeout-ms: 60000    # give up waiting for a pack's status after this long
+
+# Kick players who decline the packs
+required: true
+# MiniMessage prompt shown in the download screen ("" for none)
+prompt: "<yellow>This server uses custom world resources"
+# UNSAFE MODE: skips all SHA-1 work. Local zips aren't hashed and links without a
+# sha1 aren't downloaded at load, so startup/reload is fast. Packs are sent to
+# clients with no hash, so clients can't verify the file and may keep a stale
+# cached copy. Use for local testing only.
+unsafe: false
+# Send packs when a player joins
+send-on-join: true
+
+# Higher number = higher priority (wins where packs overlap).
+# Packs in the folder but not listed here get default-priority.
+# Keys use '/' as the config path separator, so file names with dots are fine.
+default-priority: 0
+priorities:
+  # example.zip: 10
+  # base-textures.zip: 1
+
+# Packs hosted elsewhere (direct download links). Mix freely with local zips;
+# no public-host needed for these. The name is a free label.
+# sha1 is optional: if empty, the plugin downloads the file once at load to compute it.
+# priority uses the same scale as above.
+links:
+  trim-rp:
+    url: "https://download.mc-packs.net/pack/78ec9ba5c8709c7676bdf4fe9810a57293a414d6.zip"
+    sha1: ""
+    priority: 1
+  planm-rp:
+    url: "https://download.mc-packs.net/pack/122e397af111e3dc5fb6b60004aad9464980f13a.zip"
+    sha1: ""
+    priority: 2
+  mbanim-rp:
+    url: "https://download.mc-packs.net/pack/ae9175983c5109162c86daae1acff34ccf623faf.zip"
+    sha1: ""
+    priority: 3
+  hero-rp:
+    url: "https://download.mc-packs.net/pack/45d815263d22e90eefc9801d9ad20d87a2df4d6d.zip"
+    sha1: ""
+    priority: 4
+  mace-rp:
+    url: "https://download.mc-packs.net/pack/ea42185b37284e5fa85285a6a7ecc91c0ccc5b9f.zip"
+    sha1: ""
+    priority: 5
+  chack-rp:
+    url: "https://download.mc-packs.net/pack/19c812eb9d3ff3948bfaf866f8b0bd74ba7176c2.zip"
+    sha1: ""
+    priority: 6
+  fire_chack-rp:
+    url: "https://download.mc-packs.net/pack/dc0c32150b24e2ee77ed41245d7448ff9d3c1fc9.zip"
+    sha1: ""
+    priority: 7
+  ghost-rp:
+    url: "https://download.mc-packs.net/pack/5a8dd6a2507fd36b16489eb96d1bb138a2522403.zip"
+    sha1: ""
+    priority: 8

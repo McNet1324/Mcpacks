@@ -1,0 +1,109 @@
+links:
+  trim-rp:
+    url: "https://download.mc-packs.net/pack/1f29bfe43727c5564ca0784e87c53fed80bed400.zip"
+    sha1: ""
+    priority: 0
+  planm-rp:
+    url: "https://download.mc-packs.net/pack/122e397af111e3dc5fb6b60004aad9464980f13a.zip"
+    sha1: ""
+    priority: 1
+  mbanim-rp:
+    url: "https://download.mc-packs.net/pack/ae9175983c5109162c86daae1acff34ccf623faf.zip"
+    sha1: ""
+    priority: 2
+  hero-rp:
+    url: "https://download.mc-packs.net/pack/825490cb0e4c23bc386cd978706ac4251d794b46.zip"
+    sha1: ""
+    priority: 3
+  mace-rp:
+    url: "https://download.mc-packs.net/pack/ea42185b37284e5fa85285a6a7ecc91c0ccc5b9f.zip"
+    sha1: ""
+    priority: 4
+  chack-rp:
+    url: "https://download.mc-packs.net/pack/19c812eb9d3ff3948bfaf866f8b0bd74ba7176c2.zip"
+    sha1: ""
+    priority: 5
+  fire_chack-rp:
+    url: "https://download.mc-packs.net/pack/dc0c32150b24e2ee77ed41245d7448ff9d3c1fc9.zip"
+    sha1: ""
+    priority: 6
+  ghost-rp:
+    url: "https://download.mc-packs.net/pack/5a8dd6a2507fd36b16489eb96d1bb138a2522403.zip"
+    sha1: ""
+    priority: 7
+  grim-rp:
+    url: "https://download.mc-packs.net/pack/6d8cc0885dde5cba08e7c4b897a3e21fc49e7f7e.zip"
+    sha1: ""
+    priority: 8
+  firesp-rp:
+    url: "https://download.mc-packs.net/pack/acf5b27467151d216dce974d4346a093576a1265.zip"
+    sha1: ""
+    priority: 9
+  vanillaps-rp:
+    url: "https://download.mc-packs.net/pack/d1e070bb19c69eb33e166c33ddceeda2691b5af4.zip"
+    sha1: ""
+    priority: 10
+  cropncetel-rp:
+    url: "https://download.mc-packs.net/pack/87618146dba957bc7c33d1a75f7b65752e162e41.zip"
+    sha1: ""
+    priority: 11
+  jbt-rp:
+    url: "https://download.mc-packs.net/pack/1e057750f09b6197126c1cddb268bbe677ed5ebe.zip"
+    sha1: ""
+    priority: 12
+  femaleg-rp:
+    url: "https://download.mc-packs.net/pack/dd873993634b4bae0a7af6e34cf90bc1b975a0f1.zip"
+    sha1: ""
+    priority: 13
+  vtweeks-rp:
+    url: "https://download.mc-packs.net/pack/a88429bac2f57fae57f812cc1b573ca3b134b30e.zip"
+    sha1: ""
+    priority: 14
+  vmushup-rp:
+    url: "https://drive.usercontent.google.com/download?id=1WYoENQTiTvpRbUZyOTQz1GFahWEXG_pn&export=download&confirm=t"
+    sha1: ""
+    priority: 15
+  emissives-rp:
+    url: "https://download.mc-packs.net/pack/f69affa247221ef3789a4b5acf9a8bf268add55c.zip"
+    sha1: ""
+    priority: 16
+  glow-armor-rp:
+    url: "https://download.mc-packs.net/pack/543e64622d4a4684da3efaf119417643c1459604.zip"
+    sha1: ""
+    priority: 17
+  threed-potions-rp:
+    url: "https://download.mc-packs.net/pack/d88bddc0fab86bf3832a69bed243095029ad3a79.zip"
+    sha1: ""
+    priority: 18
+  grass-rp:
+    url: "https://download.mc-packs.net/pack/5c06b3f7fcab0450d88a30d2cf7d91c605e0a186.zip"
+    sha1: ""
+    priority: 19
+  threed-food-rp:
+    url: "https://download.mc-packs.net/pack/5593563f31821e13e016babe238c0ce842f58225.zip"
+    sha1: ""
+    priority: 20
+  icons-rp:
+    url: "https://download.mc-packs.net/pack/febb55bee872325eaeaa1d361c275d212762c902.zip"
+    sha1: ""
+    priority: 21
+  iconsrp-remove-rp:
+    url: "https://download.mc-packs.net/pack/35cd9f21d77e54aa2aa05ad61d7431a64a4e2e6d.zip"
+    sha1: ""
+    priority: 22
+  immersive-gui-rp:
+    url: "https://download.mc-packs.net/pack/176aa5cf21d2c6b6a24d11cf0e74aed4c4ca9621.zip"
+    sha1: ""
+    priority: 23
+  goldplus-rp:
+    url: "https://download.mc-packs.net/pack/c7de6c88104a7ade917df4deed95c20c75d6fb3d.zip"
+    sha1: ""
+    priority: 24
+  bettercrops-rp:
+    url: "https://download.mc-packs.net/pack/788e5169eb064b696b2e20d4c5d998cceb387a2e.zip"
+    sha1: ""
+    priority: 25
+  bettersugarcane-rp:
+    url: "https://download.mc-packs.net/pack/1f5ad30f616db3138b7e0e9018c85481fc2949ba.zip"
+    sha1: ""
+    priority: 26
